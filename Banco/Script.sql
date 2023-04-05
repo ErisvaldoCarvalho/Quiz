@@ -1,0 +1,79 @@
+USE master
+GO
+DROP DATABASE Quiz
+GO
+
+CREATE DATABASE Quiz
+GO
+
+USE Quiz
+GO
+
+CREATE TABLE Discipline 
+(
+    Id INT PRIMARY KEY IDENTITY,
+    Name NVARCHAR(150) NOT NULL
+)
+GO
+
+CREATE TABLE Student
+(
+    Id INT PRIMARY KEY IDENTITY,
+    Name NVARCHAR(150) NOT NULL,
+    Email NVARCHAR(150) NOT NULL
+)
+GO
+
+CREATE TABLE Question
+(
+    Id INT PRIMARY KEY IDENTITY,
+    Context NVARCHAR(MAX) NOT NULL,
+    Command NVARCHAR(MAX) NOT NULL,
+    ContextImage VARBINARY(MAX),
+	IdDiscipline INT NOT NULL,
+	CONSTRAINT FK_QuestionDiscipline FOREIGN KEY (IdDiscipline) REFERENCES Discipline(Id)
+)
+GO
+
+CREATE TABLE AnswerOption
+(
+    Id INT PRIMARY KEY IDENTITY,
+    IdQuestion INT NOT NULL,
+    Description NVARCHAR(MAX) NOT NULL,
+    Image VARBINARY(MAX),
+    IsCorrect BIT NOT NULL,
+    CONSTRAINT FK_QuestionAnswerOption FOREIGN KEY (IdQuestion) REFERENCES Question(Id)
+)
+GO
+
+CREATE TABLE Test
+(
+    Id INT PRIMARY KEY IDENTITY(1,1),
+    Name NVARCHAR(150)
+)
+GO
+
+CREATE TABLE TestQuestions
+(
+	Id INT PRIMARY KEY,
+	IdTest INT NOT NULL,
+	IdQuestion INT,
+	CONSTRAINT FK_TestQuestionsTest FOREIGN KEY (IdTest) REFERENCES Test(Id),
+	CONSTRAINT FK_TestQuestionsQuestions FOREIGN KEY (IdQuestion) REFERENCES Test(Id)
+)
+GO
+
+CREATE TABLE StudentAnswer
+(
+    Id INT PRIMARY KEY IDENTITY,
+    IdStudent INT NOT NULL,
+    IdTest INT NOT NULL,
+    IdQuestion INT NOT NULL,
+    IdOption INT NOT NULL,
+    AnsweredOn DATETIME NOT NULL DEFAULT GETDATE(),
+    FOREIGN KEY (IdStudent) REFERENCES Student(Id),
+    FOREIGN KEY (IdTest) REFERENCES Test(Id),
+    FOREIGN KEY (IdQuestion) REFERENCES Question(Id),
+    FOREIGN KEY (IdOption) REFERENCES AnswerOption(Id)
+)
+GO
