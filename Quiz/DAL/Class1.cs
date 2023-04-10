@@ -5,66 +5,7 @@ using System.Data.SqlClient;
 
 namespace DAL
 {
-    public class DisciplineDAL
-    {
-        public void AddDiscipline(Discipline discipline)
-        {
-            using (var connection = new SqlConnection(Connection.ConnectionString))
-            {
-                var command = new SqlCommand("INSERT INTO Discipline (Name) VALUES (@Name)", connection);
-                command.Parameters.AddWithValue("@Name", discipline.Name);
-                connection.Open();
-                command.ExecuteNonQuery();
-            }
-        }
-        public List<Discipline> GetAll()
-        {
-            var disciplines = new List<Discipline>();
-
-            using (var connection = new SqlConnection(Connection.ConnectionString))
-            {
-                var command = new SqlCommand("SELECT * FROM Discipline", connection);
-                connection.Open();
-                var reader = command.ExecuteReader();
-
-                while (reader.Read())
-                {
-                    var discipline = new Discipline
-                    {
-                        Id = Convert.ToInt32(reader["Id"]),
-                        Name = reader["Name"].ToString()
-                    };
-                    disciplines.Add(discipline);
-                }
-            }
-
-            return disciplines;
-        }
-        public Discipline GetById(int _id)
-        {
-            Discipline discipline = null;
-
-            using (var connection = new SqlConnection(Connection.ConnectionString))
-            {
-                var command = new SqlCommand("SELECT * FROM Discipline WHERE Id = @Id", connection);
-                command.Parameters.AddWithValue("@Id", _id);
-                connection.Open();
-                var reader = command.ExecuteReader();
-
-                if (reader.Read())
-                {
-                    discipline = new Discipline
-                    {
-                        Id = Convert.ToInt32(reader["Id"]),
-                        Name = reader["Name"].ToString()
-                    };
-                }
-            }
-
-            return discipline;
-        }
-
-    }
+    
 
     public class StudentDAL
     {
@@ -90,7 +31,7 @@ namespace DAL
 
             using (var connection = new SqlConnection(_connectionString))
             {
-                var command = new SqlCommand("SELECT * FROM Student", connection);
+                var command = new SqlCommand("SELECT Id, Name, Email FROM Student", connection);
                 connection.Open();
                 var reader = command.ExecuteReader();
 
