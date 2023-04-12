@@ -44,7 +44,10 @@
     <Compile Include="DisciplineDAL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="QuestionDAL.cs" />
+    <Compile Include="StudentAnswerDAL.cs" />
     <Compile Include="StudentDAL.cs" />
+    <Compile Include="TestDAL.cs" />
+    <Compile Include="TestQuestionDAL.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Models\Models.csproj">
