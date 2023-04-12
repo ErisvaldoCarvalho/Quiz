@@ -81,6 +81,9 @@
     <EmbeddedResource Include="FormPrincipal.resx">
       <DependentUpon>FormPrincipal.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormQuestionList.resx">
+      <DependentUpon>FormQuestionList.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -90,6 +93,13 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="Properties\DataSources\Models.AnswerOption.datasource" />
+    <None Include="Properties\DataSources\Models.Discipline.datasource" />
+    <None Include="Properties\DataSources\Models.Question.datasource" />
+    <None Include="Properties\DataSources\Models.Student.datasource" />
+    <None Include="Properties\DataSources\Models.StudentAnswer.datasource" />
+    <None Include="Properties\DataSources\Models.Test.datasource" />
+    <None Include="Properties\DataSources\Models.TestQuestion.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -102,6 +112,16 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BLL\BLL.csproj">
+      <Project>{a907e399-ef75-4ecd-a7d9-4a936724b655}</Project>
+      <Name>BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Models\Models.csproj">
+      <Project>{4f81f5f5-1189-4e79-9485-6fcd8b7157c3}</Project>
+      <Name>Models</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

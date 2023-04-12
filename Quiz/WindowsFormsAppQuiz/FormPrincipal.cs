@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BLL;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,8 @@ namespace WindowsFormsAppQuiz
         public FormPrincipal()
         {
             InitializeComponent();
+
+            new DisciplineBLL().GetAll();
         }
     }
 }
