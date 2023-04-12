@@ -132,7 +132,7 @@ namespace DAL
                 }
             }
         }
-        public void Update(AnswerOption answerOption, SqlTransaction transaction)
+        public void Update(AnswerOption answerOption, SqlTransaction transaction = null)
         {
             using (var connection = new SqlConnection(Connection.ConnectionString))
             {

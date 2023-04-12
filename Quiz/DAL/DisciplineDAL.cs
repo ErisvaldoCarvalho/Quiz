@@ -124,7 +124,7 @@ namespace DAL
                 }
             }
         }
-        public void Update(Discipline _discipline, SqlTransaction _transaction)
+        public void Update(Discipline _discipline, SqlTransaction _transaction = null)
         {
 
             SqlTransaction transaction = _transaction;
