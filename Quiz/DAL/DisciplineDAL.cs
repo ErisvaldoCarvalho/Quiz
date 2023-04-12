@@ -44,7 +44,7 @@ namespace DAL
         }
         public List<Discipline> GetAll()
         {
-            var disciplines = new List<Discipline>();
+            List<Discipline> disciplineList = new List<Discipline>();
 
             using (var connection = new SqlConnection(Connection.ConnectionString))
             {
@@ -59,10 +59,10 @@ namespace DAL
                         Id = Convert.ToInt32(reader["Id"]),
                         Name = reader["Name"].ToString()
                     };
-                    disciplines.Add(discipline);
+                    disciplineList.Add(discipline);
                 }
             }
-            return disciplines;
+            return disciplineList;
         }
         public Discipline GetById(int _id)
         {
