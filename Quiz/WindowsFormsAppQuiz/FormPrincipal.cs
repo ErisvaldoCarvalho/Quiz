@@ -1,12 +1,5 @@
 ﻿using BLL;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace WindowsFormsAppQuiz
@@ -16,8 +9,14 @@ namespace WindowsFormsAppQuiz
         public FormPrincipal()
         {
             InitializeComponent();
+        }
 
-            new DisciplineBLL().GetAll();
+        private void questõesToolStripMenuItem_Click(object sender, System.EventArgs e)
+        {
+            using (FormQuestionSelect frm = new FormQuestionSelect())
+            {
+                frm.ShowDialog();
+            }
         }
     }
 }

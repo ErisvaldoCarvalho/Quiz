@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace WindowsFormsAppQuiz
 {
-    public partial class FormQuestionList : Form
+    public partial class FormDisciplineSelect : Form
     {
-        public FormQuestionList()
+        public FormDisciplineSelect()
         {
             InitializeComponent();
         }

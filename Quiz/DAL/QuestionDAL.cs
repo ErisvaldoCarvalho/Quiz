@@ -47,11 +47,11 @@ namespace DAL
         }
         public List<Question> GetAll()
         {
-            var questions = new List<Question>();
+            List<Question> questionList = new List<Question>();
 
             using (var connection = new SqlConnection(Connection.ConnectionString))
             {
-                var command = new SqlCommand("SELECT Id, Context, Command, ContextImage, IdDiscipline FROM Questions", connection);
+                var command = new SqlCommand("SELECT Id, Context, Command, ContextImage, IdDiscipline FROM Question", connection);
                 connection.Open();
                 var reader = command.ExecuteReader();
 
@@ -65,10 +65,10 @@ namespace DAL
                         ContextImage = reader.IsDBNull(reader.GetOrdinal("ContextImage")) ? null : (byte[])reader["ContextImage"],
                         IdDiscipline = Convert.ToInt32(reader["IdDiscipline"]),
                     };
-                    questions.Add(question);
+                    questionList.Add(question);
                 }
             }
-            return questions;
+            return questionList;
         }
         public Question GetById(int _id)
         {

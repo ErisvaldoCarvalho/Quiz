@@ -46,11 +46,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FormDisciplineList.cs">
+    <Compile Include="FormCreateConnection.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormDisciplineList.Designer.cs">
-      <DependentUpon>FormDisciplineList.cs</DependentUpon>
+    <Compile Include="FormCreateConnection.Designer.cs">
+      <DependentUpon>FormCreateConnection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDisciplineRegister.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDisciplineRegister.Designer.cs">
+      <DependentUpon>FormDisciplineRegister.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDisciplineSelect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDisciplineSelect.Designer.cs">
+      <DependentUpon>FormDisciplineSelect.cs</DependentUpon>
     </Compile>
     <Compile Include="FormPrincipal.cs">
       <SubType>Form</SubType>
@@ -58,31 +70,56 @@
     <Compile Include="FormPrincipal.Designer.cs">
       <DependentUpon>FormPrincipal.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormQuestionList.cs">
+    <Compile Include="FormQuestionRegister.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormQuestionList.Designer.cs">
-      <DependentUpon>FormQuestionList.cs</DependentUpon>
+    <Compile Include="FormQuestionRegister.Designer.cs">
+      <DependentUpon>FormQuestionRegister.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormStudentList.cs">
+    <Compile Include="FormQuestionSelect.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormStudentList.Designer.cs">
-      <DependentUpon>FormStudentList.cs</DependentUpon>
+    <Compile Include="FormQuestionSelect.Designer.cs">
+      <DependentUpon>FormQuestionSelect.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormTestListcs.cs">
+    <Compile Include="FormStudentRegister.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormTestListcs.Designer.cs">
-      <DependentUpon>FormTestListcs.cs</DependentUpon>
+    <Compile Include="FormStudentRegister.Designer.cs">
+      <DependentUpon>FormStudentRegister.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormStudentSelect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormStudentSelect.Designer.cs">
+      <DependentUpon>FormStudentSelect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormTestRegister.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTestRegister.Designer.cs">
+      <DependentUpon>FormTestRegister.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormTestSelect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTestSelect.Designer.cs">
+      <DependentUpon>FormTestSelect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HandleErro.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormCreateConnection.resx">
+      <DependentUpon>FormCreateConnection.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormPrincipal.resx">
       <DependentUpon>FormPrincipal.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormQuestionList.resx">
-      <DependentUpon>FormQuestionList.cs</DependentUpon>
+    <EmbeddedResource Include="FormQuestionRegister.resx">
+      <DependentUpon>FormQuestionRegister.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormQuestionSelect.resx">
+      <DependentUpon>FormQuestionSelect.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

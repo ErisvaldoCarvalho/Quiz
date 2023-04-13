@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace WindowsFormsAppQuiz
 {
-    public partial class FormDisciplineList : Form
+    public partial class FormCreateConnection : Form
     {
-        public FormDisciplineList()
+        public FormCreateConnection()
         {
             InitializeComponent();
+        }
+
+        private void buttonSave_Click(object sender, EventArgs e)
+        {
+            this.DialogResult = DialogResult.OK;
         }
     }
 }
