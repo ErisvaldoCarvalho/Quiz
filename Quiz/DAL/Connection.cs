@@ -12,8 +12,8 @@ namespace DAL
             get
             {
                 if (String.IsNullOrEmpty(connectionString))
-                    if (File.Exists("C:\\Configuracoes\\conexao.config"))
-                        connectionString = File.ReadAllText("C:\\Configuracoes\\conexao.config");
+                    if (File.Exists("C:\\Configuracoes\\quizConnection.config"))
+                        connectionString = File.ReadAllText("C:\\Configuracoes\\quizConnection.config");
                     else throw new Exception("Você precisa criar a conexão com o banco de dados") { Data = { { "Id", 1 } } };
 
                 return connectionString;

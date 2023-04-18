@@ -1,6 +1,4 @@
-﻿using BLL;
-using System;
-using System.Windows.Forms;
+﻿using System.Windows.Forms;
 
 namespace WindowsFormsAppQuiz
 {
@@ -10,7 +8,6 @@ namespace WindowsFormsAppQuiz
         {
             InitializeComponent();
         }
-
         private void questõesToolStripMenuItem_Click(object sender, System.EventArgs e)
         {
             using (FormQuestionSelect frm = new FormQuestionSelect())

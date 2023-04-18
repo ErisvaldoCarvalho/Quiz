@@ -112,6 +112,9 @@
     <EmbeddedResource Include="FormCreateConnection.resx">
       <DependentUpon>FormCreateConnection.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormDisciplineSelect.resx">
+      <DependentUpon>FormDisciplineSelect.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormPrincipal.resx">
       <DependentUpon>FormPrincipal.cs</DependentUpon>
     </EmbeddedResource>

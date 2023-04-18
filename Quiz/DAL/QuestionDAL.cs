@@ -13,7 +13,7 @@ namespace DAL
 
             using (var connection = new SqlConnection(Connection.ConnectionString))
             {
-                using (SqlCommand cmd = new SqlCommand("INSERT INTO Questions (Context, Command, ContextImage, IdDiscipline) VALUES (@Context, @Command, @ContextImage, @IdDiscipline)", connection))
+                using (SqlCommand cmd = new SqlCommand("INSERT INTO Question (Context, Command, ContextImage, IdDiscipline) VALUES (@Context, @Command, @ContextImage, @IdDiscipline)", connection))
                 {
                     try
                     {
@@ -31,7 +31,7 @@ namespace DAL
                         cmd.Parameters.AddWithValue("@Command", _question.Command);
                         cmd.Parameters.AddWithValue("@ContextImage", _question.ContextImage ?? (object)DBNull.Value);
                         cmd.Parameters.AddWithValue("@IdDiscipline", _question.IdDiscipline);
-                        connection.Open();
+                        
                         cmd.ExecuteNonQuery();
 
                         if (_transaction == null)
