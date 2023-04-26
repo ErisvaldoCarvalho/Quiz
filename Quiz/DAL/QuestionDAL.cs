@@ -29,7 +29,8 @@ namespace DAL
                         cmd.Connection = transaction.Connection;
                         cmd.Parameters.AddWithValue("@Context", _question.Context);
                         cmd.Parameters.AddWithValue("@Command", _question.Command);
-                        cmd.Parameters.AddWithValue("@ContextImage", _question.ContextImage ?? (object)DBNull.Value);
+                        //cmd.Parameters.AddWithValue("@ContextImage", _question.ContextImage ?? (object)DBNull.Value);
+                        cmd.Parameters.Add(new SqlParameter("@ContextImage", System.Data.SqlDbType.VarBinary).Value = _question.ContextImage ?? (object)DBNull.Value);
                         cmd.Parameters.AddWithValue("@IdDiscipline", _question.IdDiscipline);
                         
                         cmd.ExecuteNonQuery();

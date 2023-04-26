@@ -46,8 +46,8 @@
             this.responderTesteToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(600, 24);
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(5, 2, 0, 2);
+            this.menuStrip1.Size = new System.Drawing.Size(800, 28);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -59,49 +59,50 @@
             this.alunosToolStripMenuItem,
             this.disciplinasToolStripMenuItem});
             this.cadastroToolStripMenuItem.Name = "cadastroToolStripMenuItem";
-            this.cadastroToolStripMenuItem.Size = new System.Drawing.Size(66, 20);
+            this.cadastroToolStripMenuItem.Size = new System.Drawing.Size(82, 24);
             this.cadastroToolStripMenuItem.Text = "Cadastro";
             // 
             // questõesToolStripMenuItem
             // 
             this.questõesToolStripMenuItem.Name = "questõesToolStripMenuItem";
             this.questõesToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Q)));
-            this.questõesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.questõesToolStripMenuItem.Size = new System.Drawing.Size(206, 26);
             this.questõesToolStripMenuItem.Text = "Questões";
             this.questõesToolStripMenuItem.Click += new System.EventHandler(this.questõesToolStripMenuItem_Click);
             // 
             // testesToolStripMenuItem
             // 
             this.testesToolStripMenuItem.Name = "testesToolStripMenuItem";
-            this.testesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.testesToolStripMenuItem.Size = new System.Drawing.Size(206, 26);
             this.testesToolStripMenuItem.Text = "Testes";
             // 
             // alunosToolStripMenuItem
             // 
             this.alunosToolStripMenuItem.Name = "alunosToolStripMenuItem";
-            this.alunosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.alunosToolStripMenuItem.Size = new System.Drawing.Size(206, 26);
             this.alunosToolStripMenuItem.Text = "Alunos";
             // 
             // disciplinasToolStripMenuItem
             // 
             this.disciplinasToolStripMenuItem.Name = "disciplinasToolStripMenuItem";
-            this.disciplinasToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.disciplinasToolStripMenuItem.Size = new System.Drawing.Size(206, 26);
             this.disciplinasToolStripMenuItem.Text = "Disciplinas";
             // 
             // responderTesteToolStripMenuItem
             // 
             this.responderTesteToolStripMenuItem.Name = "responderTesteToolStripMenuItem";
-            this.responderTesteToolStripMenuItem.Size = new System.Drawing.Size(103, 20);
+            this.responderTesteToolStripMenuItem.Size = new System.Drawing.Size(130, 24);
             this.responderTesteToolStripMenuItem.Text = "Responder teste";
             // 
             // FormPrincipal
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(600, 366);
+            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.menuStrip1);
+            this.KeyPreview = true;
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "FormPrincipal";
             this.Text = "Form1";
             this.menuStrip1.ResumeLayout(false);

@@ -71,63 +71,77 @@
             this.disciplineDataGridViewTextBoxColumn,
             this.answerOptionsDataGridViewTextBoxColumn});
             this.disciplineDataGridView.DataSource = this.questionBindingSource;
-            this.disciplineDataGridView.Location = new System.Drawing.Point(9, 82);
-            this.disciplineDataGridView.Margin = new System.Windows.Forms.Padding(2);
+            this.disciplineDataGridView.Location = new System.Drawing.Point(12, 101);
+            this.disciplineDataGridView.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.disciplineDataGridView.Name = "disciplineDataGridView";
             this.disciplineDataGridView.ReadOnly = true;
             this.disciplineDataGridView.RowHeadersWidth = 51;
             this.disciplineDataGridView.RowTemplate.Height = 24;
-            this.disciplineDataGridView.Size = new System.Drawing.Size(653, 284);
+            this.disciplineDataGridView.Size = new System.Drawing.Size(871, 350);
             this.disciplineDataGridView.TabIndex = 1;
             // 
             // idDataGridViewTextBoxColumn
             // 
             this.idDataGridViewTextBoxColumn.DataPropertyName = "Id";
             this.idDataGridViewTextBoxColumn.HeaderText = "Id";
+            this.idDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
             this.idDataGridViewTextBoxColumn.ReadOnly = true;
+            this.idDataGridViewTextBoxColumn.Width = 125;
             // 
             // contextDataGridViewTextBoxColumn
             // 
             this.contextDataGridViewTextBoxColumn.DataPropertyName = "Context";
             this.contextDataGridViewTextBoxColumn.HeaderText = "Context";
+            this.contextDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.contextDataGridViewTextBoxColumn.Name = "contextDataGridViewTextBoxColumn";
             this.contextDataGridViewTextBoxColumn.ReadOnly = true;
+            this.contextDataGridViewTextBoxColumn.Width = 125;
             // 
             // commandDataGridViewTextBoxColumn
             // 
             this.commandDataGridViewTextBoxColumn.DataPropertyName = "Command";
             this.commandDataGridViewTextBoxColumn.HeaderText = "Command";
+            this.commandDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.commandDataGridViewTextBoxColumn.Name = "commandDataGridViewTextBoxColumn";
             this.commandDataGridViewTextBoxColumn.ReadOnly = true;
+            this.commandDataGridViewTextBoxColumn.Width = 125;
             // 
             // contextImageDataGridViewImageColumn
             // 
             this.contextImageDataGridViewImageColumn.DataPropertyName = "ContextImage";
             this.contextImageDataGridViewImageColumn.HeaderText = "ContextImage";
+            this.contextImageDataGridViewImageColumn.MinimumWidth = 6;
             this.contextImageDataGridViewImageColumn.Name = "contextImageDataGridViewImageColumn";
             this.contextImageDataGridViewImageColumn.ReadOnly = true;
+            this.contextImageDataGridViewImageColumn.Width = 125;
             // 
             // idDisciplineDataGridViewTextBoxColumn
             // 
             this.idDisciplineDataGridViewTextBoxColumn.DataPropertyName = "IdDiscipline";
             this.idDisciplineDataGridViewTextBoxColumn.HeaderText = "IdDiscipline";
+            this.idDisciplineDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.idDisciplineDataGridViewTextBoxColumn.Name = "idDisciplineDataGridViewTextBoxColumn";
             this.idDisciplineDataGridViewTextBoxColumn.ReadOnly = true;
+            this.idDisciplineDataGridViewTextBoxColumn.Width = 125;
             // 
             // disciplineDataGridViewTextBoxColumn
             // 
             this.disciplineDataGridViewTextBoxColumn.DataPropertyName = "Discipline";
             this.disciplineDataGridViewTextBoxColumn.HeaderText = "Discipline";
+            this.disciplineDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.disciplineDataGridViewTextBoxColumn.Name = "disciplineDataGridViewTextBoxColumn";
             this.disciplineDataGridViewTextBoxColumn.ReadOnly = true;
+            this.disciplineDataGridViewTextBoxColumn.Width = 125;
             // 
             // answerOptionsDataGridViewTextBoxColumn
             // 
             this.answerOptionsDataGridViewTextBoxColumn.DataPropertyName = "AnswerOptions";
             this.answerOptionsDataGridViewTextBoxColumn.HeaderText = "AnswerOptions";
+            this.answerOptionsDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.answerOptionsDataGridViewTextBoxColumn.Name = "answerOptionsDataGridViewTextBoxColumn";
             this.answerOptionsDataGridViewTextBoxColumn.ReadOnly = true;
+            this.answerOptionsDataGridViewTextBoxColumn.Width = 125;
             // 
             // questionBindingSource
             // 
@@ -136,10 +150,10 @@
             // buttonSelect
             // 
             this.buttonSelect.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonSelect.Location = new System.Drawing.Point(535, 370);
-            this.buttonSelect.Margin = new System.Windows.Forms.Padding(2);
+            this.buttonSelect.Location = new System.Drawing.Point(713, 455);
+            this.buttonSelect.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonSelect.Name = "buttonSelect";
-            this.buttonSelect.Size = new System.Drawing.Size(66, 21);
+            this.buttonSelect.Size = new System.Drawing.Size(88, 26);
             this.buttonSelect.TabIndex = 2;
             this.buttonSelect.Text = "Se&lecionar";
             this.buttonSelect.UseVisualStyleBackColor = true;
@@ -149,10 +163,10 @@
             // 
             this.buttonExit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.buttonExit.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.buttonExit.Location = new System.Drawing.Point(606, 371);
-            this.buttonExit.Margin = new System.Windows.Forms.Padding(2);
+            this.buttonExit.Location = new System.Drawing.Point(808, 457);
+            this.buttonExit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonExit.Name = "buttonExit";
-            this.buttonExit.Size = new System.Drawing.Size(56, 21);
+            this.buttonExit.Size = new System.Drawing.Size(75, 26);
             this.buttonExit.TabIndex = 2;
             this.buttonExit.Text = "&Sair";
             this.buttonExit.UseVisualStyleBackColor = true;
@@ -161,19 +175,19 @@
             // 
             this.textBoxSearch.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBoxSearch.Location = new System.Drawing.Point(9, 58);
-            this.textBoxSearch.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxSearch.Location = new System.Drawing.Point(12, 71);
+            this.textBoxSearch.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBoxSearch.Name = "textBoxSearch";
-            this.textBoxSearch.Size = new System.Drawing.Size(350, 20);
+            this.textBoxSearch.Size = new System.Drawing.Size(465, 22);
             this.textBoxSearch.TabIndex = 3;
             // 
             // buttonSearch
             // 
             this.buttonSearch.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonSearch.Location = new System.Drawing.Point(363, 55);
-            this.buttonSearch.Margin = new System.Windows.Forms.Padding(2);
+            this.buttonSearch.Location = new System.Drawing.Point(484, 68);
+            this.buttonSearch.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonSearch.Name = "buttonSearch";
-            this.buttonSearch.Size = new System.Drawing.Size(56, 21);
+            this.buttonSearch.Size = new System.Drawing.Size(75, 26);
             this.buttonSearch.TabIndex = 2;
             this.buttonSearch.Text = "&Buscar";
             this.buttonSearch.UseVisualStyleBackColor = true;
@@ -182,10 +196,10 @@
             // buttonUpdate
             // 
             this.buttonUpdate.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonUpdate.Location = new System.Drawing.Point(424, 55);
-            this.buttonUpdate.Margin = new System.Windows.Forms.Padding(2);
+            this.buttonUpdate.Location = new System.Drawing.Point(565, 68);
+            this.buttonUpdate.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonUpdate.Name = "buttonUpdate";
-            this.buttonUpdate.Size = new System.Drawing.Size(56, 21);
+            this.buttonUpdate.Size = new System.Drawing.Size(75, 26);
             this.buttonUpdate.TabIndex = 4;
             this.buttonUpdate.Text = "&Alterar";
             this.buttonUpdate.UseVisualStyleBackColor = true;
@@ -193,10 +207,10 @@
             // buttonAdd
             // 
             this.buttonAdd.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonAdd.Location = new System.Drawing.Point(484, 55);
-            this.buttonAdd.Margin = new System.Windows.Forms.Padding(2);
+            this.buttonAdd.Location = new System.Drawing.Point(645, 68);
+            this.buttonAdd.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonAdd.Name = "buttonAdd";
-            this.buttonAdd.Size = new System.Drawing.Size(56, 21);
+            this.buttonAdd.Size = new System.Drawing.Size(75, 26);
             this.buttonAdd.TabIndex = 4;
             this.buttonAdd.Text = "A&dicionar";
             this.buttonAdd.UseVisualStyleBackColor = true;
@@ -205,10 +219,10 @@
             // buttonDelete
             // 
             this.buttonDelete.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonDelete.Location = new System.Drawing.Point(545, 55);
-            this.buttonDelete.Margin = new System.Windows.Forms.Padding(2);
+            this.buttonDelete.Location = new System.Drawing.Point(727, 68);
+            this.buttonDelete.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonDelete.Name = "buttonDelete";
-            this.buttonDelete.Size = new System.Drawing.Size(56, 21);
+            this.buttonDelete.Size = new System.Drawing.Size(75, 26);
             this.buttonDelete.TabIndex = 4;
             this.buttonDelete.Text = "&Excluir";
             this.buttonDelete.UseVisualStyleBackColor = true;
@@ -216,10 +230,10 @@
             // buttonView
             // 
             this.buttonView.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonView.Location = new System.Drawing.Point(606, 55);
-            this.buttonView.Margin = new System.Windows.Forms.Padding(2);
+            this.buttonView.Location = new System.Drawing.Point(808, 68);
+            this.buttonView.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonView.Name = "buttonView";
-            this.buttonView.Size = new System.Drawing.Size(56, 21);
+            this.buttonView.Size = new System.Drawing.Size(75, 26);
             this.buttonView.TabIndex = 5;
             this.buttonView.Text = "&Visualizar";
             this.buttonView.UseVisualStyleBackColor = true;
@@ -229,9 +243,8 @@
             this.label1.Dock = System.Windows.Forms.DockStyle.Top;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(0, 0);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(674, 43);
+            this.label1.Size = new System.Drawing.Size(899, 53);
             this.label1.TabIndex = 6;
             this.label1.Text = "Questões";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -239,17 +252,18 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(6, 43);
+            this.label2.Location = new System.Drawing.Point(8, 53);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(58, 13);
+            this.label2.Size = new System.Drawing.Size(72, 16);
             this.label2.TabIndex = 7;
             this.label2.Text = "Buscar por";
             // 
             // FormQuestionSelect
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(674, 400);
+            this.ClientSize = new System.Drawing.Size(899, 492);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.buttonView);
@@ -261,7 +275,7 @@
             this.Controls.Add(this.buttonSearch);
             this.Controls.Add(this.buttonSelect);
             this.Controls.Add(this.disciplineDataGridView);
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MinimizeBox = false;
             this.Name = "FormQuestionSelect";
             this.ShowIcon = false;

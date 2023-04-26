@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FormAnswerOptionRegister.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAnswerOptionRegister.Designer.cs">
+      <DependentUpon>FormAnswerOptionRegister.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormCreateConnection.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -109,6 +115,9 @@
     <Compile Include="HandleErro.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormAnswerOptionRegister.resx">
+      <DependentUpon>FormAnswerOptionRegister.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormCreateConnection.resx">
       <DependentUpon>FormCreateConnection.cs</DependentUpon>
     </EmbeddedResource>
